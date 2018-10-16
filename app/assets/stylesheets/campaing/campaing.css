@@ -1,0 +1,16 @@
+@import url("tabs.css");
+@import url("sheet.css");
+@import url("map.css");
+
+.campaing {
+    position: relative;
+    top: 15px;
+    height: 96vh;
+    left: 0px;
+    margin-right: 15px;
+    background-color: var(--grey-1);
+    border-radius: 0rem .5rem .5rem .5rem;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}

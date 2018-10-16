@@ -1,0 +1,52 @@
+.btn-connect {
+    padding: 5px 22px 5px 22px;
+    background-color: var(--darker-theme);
+    cursor: pointer;
+    border-radius: .25rem;
+    margin-left: 25px;
+    position: absolute;
+    bottom: 8px;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.btn-connect:hover {
+    background-color: var(--theme);
+}
+
+.btn-connect.close {
+    height: 30px;
+    width: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.btn-connect.close > a {
+    display: none;
+}
+
+.btn-connect > a {
+    text-decoration: none;
+    font-size: 27px;
+    color: var(--letter-color);
+}
+
+.logged {
+    position: fixed;
+    bottom: 10px;
+    margin-left: 5px;
+    background-color: var(--grey-2);
+    width: 240px;
+    height: 55px;
+    border-radius: .5rem;
+    transition: 0.5s;
+}
+
+.logged-close {
+    width: 0px;
+    margin: 0px;
+    transition: 0.5s;
+}
+
+.logged-close > span {
+    display: none;
+}

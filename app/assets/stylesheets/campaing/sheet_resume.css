@@ -1,0 +1,26 @@
+.sheet-resume {
+    height: 88.6%;
+    width: 0;
+    position: fixed;
+    right: 15px;
+    top: 64px;
+    bottom: 0px;
+    transition: width 0.5s;
+    background-color: var(--grey-2);
+    border-radius: 0 0 .5rem 0;
+}
+
+.sheet-resume.open {
+    width: 85vh;
+}
+
+.campaing-content.shrink {
+    margin-right: 85vh;
+}
+
+.campaing-content {
+    height: 95%;
+    transition: 0.5s;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}

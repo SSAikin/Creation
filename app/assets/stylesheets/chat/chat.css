@@ -1,0 +1,35 @@
+@import url("messages.css");
+
+.chat-message {
+    position: relative;
+    top: 15px;
+    height: 82vh;
+    left: 0px;
+    margin-right: 15px;
+    background-color: var(--grey-1);
+    border-radius: 0rem .5rem .5rem .5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-text {
+    position: relative;
+    top: 15px;
+    left: 0px;
+    height: 13vh;
+    margin-right: 15px;
+    margin-top: 10px;
+    background-color: var(--grey-1);
+    border-radius: .5rem;
+}
+
+.chat-input {
+    border: none;
+    margin: 15px;
+    height: 76%;
+    width: 98%;
+    resize: none;
+    background-color: var(--grey-1);
+    font-size: 16px;
+    color: var(--letter-color);
+}

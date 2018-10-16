@@ -1,0 +1,49 @@
+@import url("campaing/campaing.css");
+@import url("sidebar/sidebar.css");
+@import url("chat/chat.css");
+@import url("icons/ico.css");
+@import url("scrollbar.css");
+@import url("utils.css");
+
+:root {
+	font-family: Arial, Helvetica, sans-serif !important;
+	--base: #1e2124;
+
+	--grey-1: #282b30;
+	--grey-2: #36393e;
+	--grey-3: #424549;
+	--grey-4: #63676d;
+	--grey-5: #707479;
+
+	--theme: #394e75;
+	--darker-theme: #2c3b56;
+
+	--letter-color: #adacac;
+
+	--white: #fff;
+}
+
+body {
+	background-color: var(--base);
+	display: flex;
+	margin: 0px;
+    overflow-x: hidden;
+}
+
+*:focus {
+    outline: none;
+}
+
+.btn {
+	padding: 10px 15px 10px 15px;
+	border: none;
+	border-radius: .25rem;
+	background-color: var(--theme);
+	color: var(--letter-color);
+	font-size: 22px;
+}
+
+.btn:hover {
+	background-color: var(--darker-theme);
+	cursor: pointer;
+}

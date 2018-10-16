@@ -1,0 +1,124 @@
+:root {
+	--color-green-notify: #d4edda;
+	--color-green-bord: #add4b6;
+	--green-notify: #0e441a;
+	--color-red-notify: #efc4c8;
+	--color-red-bord: #ca979d;
+	--red-notify: #721c24;
+	--color-yellow-notify: #fff3cd;
+	--color-yellow-bord: #d6c593;
+	--yellow-notify: #8e660d;
+}
+
+.box-notify {
+	min-width: 30%;
+	max-width: 60%;
+	margin: auto;
+	border-radius: .25rem;
+	border: 1px solid transparent;
+	padding: 0.7% 1%;
+	font-size: 76%;
+}
+
+.green-notify {
+	background-color: var(--color-green-notify);
+	border-color: var(--color-green-bord);
+	color: var(--green-notify);
+}
+
+.red-notify {
+	background-color: var(--color-red-notify);
+	border-color: var(--color-red-bord);
+	color: var(--red-notify);
+}
+
+.yellow-notify {
+	background-color: var(--color-yellow-notify);
+	border-color: var(--color-yellow-bord);
+	color: var(--yellow-notify);
+}
+
+.theme-notify {
+	color: var(--letter-color);
+}
+
+.float-notify {
+	position: absolute;
+	top: 20px;
+	left: 100; right: 100;
+	z-index: 99999;
+}
+
+.close-notify {
+	display: inline-block;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 85%;
+	float: right;
+	vertical-align: middle
+}
+
+.close-notify:hover {
+	filter: brightness(50%);
+	cursor: pointer;
+}
+
+.message-notify-float {
+	display: inline-block;
+}
+
+
+.box-notify.fade-n-drop {
+	top: -300%;
+	opacity: 1;
+	display: block;
+}
+
+.box-notify.top.fade-n-drop.notify-open {
+
+	-webkit-transition: 250ms top 250ms ease;
+	-moz-transition: 250ms top 250ms ease;
+	-ms-transition: 250ms top 250ms ease;
+	-o-transition: 250ms top 250ms ease;
+	transition: 250ms top 250ms ease;
+	top: 5%;
+}
+
+.box-notify.top.fade-n-drop {
+	top: -300%;
+
+	-webkit-transition: 500ms top 500ms ease;
+	-moz-transition: 500ms top 500ms ease;
+	-ms-transition: 500ms top 500ms ease;
+	-o-transition: 500ms top 500ms ease;
+	transition: 500ms top 500ms ease;
+}
+
+.left {
+	left: 1.5%;
+	right: 100%;
+}
+
+.right {
+	right: 1.5%;
+	left: 50%;
+}
+
+.box-notify.bottom.fade-n-drop.notify-open {
+
+	-webkit-transition: 250ms top 250ms ease;
+	-moz-transition: 250ms top 250ms ease;
+	-ms-transition: 250ms top 250ms ease;
+	-o-transition: 250ms top 250ms ease;
+	transition: 250ms top 250ms ease;
+	top: 92%;
+}
+
+.box-notify.bottom.fade-n-drop {
+	top: 300%;
+
+	-webkit-transition: 500ms top 500ms ease;
+	-moz-transition: 500ms top 500ms ease;
+	-ms-transition: 500ms top 500ms ease;
+	-o-transition: 500ms top 500ms ease;
+	transition: 500ms top 500ms ease;
+}

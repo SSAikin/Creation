@@ -1,0 +1,33 @@
+.tab > .ico-sheet:after {
+      content: "\65";
+      position: relative;
+      bottom: -3px;
+}
+
+.tab > .ico-die-six:after {
+      content: "\6a";
+      position: relative;
+      bottom: -3px;
+      font-size: 25px;
+}
+
+.tab > .ico-globe:after {
+      content: "\6b";
+      position: relative;
+      bottom: -3px;
+      font-size: 25px;
+}
+
+.tab > .ico-bookmark {
+    content: "\6c";
+    position: relative;
+    bottom: 3px;
+    font-size: 25px;
+}
+
+.tab > .ico-fire {
+    content: "\6d";
+    position: relative;
+    bottom: 3px;
+    font-size: 25px;
+}

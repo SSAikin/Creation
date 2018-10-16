@@ -1,0 +1,46 @@
+/* Open side-bar Button */
+/* Part where you can hover the mouse to show the button to open and close the side-bar */
+.for-hover-side {
+    position: fixed;
+    display: inline-block;
+    width: 20px;
+    height: 100vh;
+    float: left;
+    transition: margin-left .5s;
+    margin-left: 55px;
+    z-index: 999999;
+}
+
+.button-open-sidebar {
+    width: 20px;
+    height: 40px;
+    background-color: var(--base);
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    border: 0px solid var(--base);
+    border-left: 0;
+    text-align: center;
+    padding-left: 0px;
+    font-size: 14px;
+    color: var(--letter-color);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    position: fixed;
+    top: 40%;
+    transition: .5s;
+    z-index: 999999;
+}
+
+.button-open-sidebar:hover {
+    color: var(--white);
+}
+
+.hide-button {
+    width: 0px;
+    padding: 0px;
+    margin: 0px;
+    content: "";
+}

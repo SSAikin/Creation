@@ -1,0 +1,18 @@
+ <div class="login-box" style="width: initial; left: 15%; top: 80px;">
+	<div class="login-form" >
+	    <%= form_for(resource, as: resource_name, url: session_path(resource_name), ) do |f| %>
+	    	<%= devise_error_messages! %>
+			<div class="form-row w-100">
+				<div class="ml3 form-col">
+					<%= f.label(:email, class: "label") %>
+					<%= f.email_field(:email, autofocus: true, autocomplete: "email", class: "input", placeholder: "Email") %>
+					<div class="error">
+
+					</div>
+				</div>
+			</div>
+			<%= f.submit("Send me reset password instructions", class: "btn") %>
+	    <% end %>
+    	<%= render "devise/shared/links" %>
+	</div>
+</div>	

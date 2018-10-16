@@ -1,0 +1,49 @@
+.hide {
+	display: none;
+}
+
+.wrap-image {
+    width: 100%;
+}
+
+.image {
+    width: 45px;
+    height: 45px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    overflow: hidden;
+    border-radius: 5rem;
+}
+
+.ml1 {
+    margin-left: 3px;
+}
+
+.ml2 {
+    margin-left: 5px;
+}
+
+.ml3 {
+    margin-left: 7px;
+}
+
+.ml4 {
+    margin-left: 13px;
+}
+
+.mt1 {
+    margin-top: 3px;
+}
+
+.mt2 {
+    margin-top: 5px;
+}
+
+.mt3 {
+    margin-top: 7px;
+}
+
+.mt4 {
+    margin-top: 13px;
+}

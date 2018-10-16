@@ -1,0 +1,76 @@
+@import url("tab_ico.css");
+.tabs {
+    width: 100%;
+    height: 50px;
+    background-color: var(--base);
+}
+
+.tab-small {
+    float: right;
+    height: 100%;
+    padding: 3px 3px 0px 3px;
+    position: relative;
+    top: -3px;
+    margin-bottom: 6px;
+    margin-top: 0px;
+    border-radius: .5rem .5rem 0 0;
+}
+
+.tab-small > .content-ico {
+    height: 45px;
+    width: 45px;
+    background-color: var(--grey-1);
+    color: var(--letter-color);
+    border-radius: 5rem;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.tab-small > .content-ico > .ico-sheet {
+    padding-left: 6px;
+}
+
+.tab-small:hover, .tab-small:hover .content-ico {
+    color: var(--white);
+    cursor: pointer;
+}
+
+.tab-small.selected {
+    background-color: var(--grey-2);
+}
+
+.tab-small.selected .content-ico {
+    margin-bottom: 5px;
+    background-color: var(--base);
+}
+
+.tab {
+    display: inline-block;
+    width: 18%;
+    height: 100%;
+    color: var(--letter-color);
+    font-size: 20px;
+    line-height: 200%;
+    border-radius: .5rem .5rem 0 0;
+}
+
+.tab > p {
+    position: relative;
+    bottom: 35%;
+    text-align: left;
+}
+
+.tab.selected {
+    background-color: var(--grey-1);
+}
+
+.tab:not(.selected):hover {
+    background-color: var(--grey-2);
+    cursor: pointer;
+}
+
+.tab.selected:hover {
+    color: var(--white);
+    cursor: pointer;
+}
