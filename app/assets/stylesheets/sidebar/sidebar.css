@@ -6,7 +6,7 @@
 /* rest of the content control */
 .main {
     transition: margin-left .5s;
-    margin-left: 55px;
+    margin-left: 65px;
     right: 0px;
     overflow-x: hidden;
     flex: auto;
@@ -16,5 +16,4 @@
 
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
 }

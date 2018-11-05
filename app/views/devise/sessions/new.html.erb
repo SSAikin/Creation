@@ -1,8 +1,11 @@
  <div class="login-box">
+	 <% if flash[:alert] %>
+    	<div class="box-notify red-notify ">
+    		<%= flash[:alert] %>
+    	</div>
+    <% end %>
  	<div class="login-form">
 		<%= form_for(resource, as: resource_name, url: session_path(resource_name), ) do |f| %>
-	    	<%= devise_error_messages! %>
-	        <%= binding.pry %>
 	        <div class="form-row w-100">
 	            <div class="ml3 form-col">
 	            	<%= f.label(:email, class: "label") %><br />
@@ -16,15 +19,15 @@
 	            </div>
 	        </div>
 			<% if devise_mapping.rememberable? -%>
-	        <div class="w-100 mt4 form-row">
-	            <div class="ml3 form-col">
-					<%= f.label(:remember_me, class: "container-checkbox") do %>
-						<%= f.label(:remember_me) %>
-						<%= f.check_box(:remember_me) %>
-	                	<span class="checkmark"></span>
-	            	<% end %>
-	            </div>
-	        </div>
+		        <div class="w-100 form-row">
+		            <div class="ml3 form-col">
+						<%= f.label(:remember_me, class: "container-checkbox") do %>
+							<%= f.label(:remember_me) %>
+							<%= f.check_box(:remember_me) %>
+		                	<span class="checkmark"></span>
+		            	<% end %>
+		            </div>
+		        </div>
 			<% end %>
 			<%= f.submit("Log in", class: "btn") %>
 		<% end %>

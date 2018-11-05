@@ -1,0 +1,22 @@
+<div style="margin-bottom: 50%">		
+	<%= link_to("#", remote: true, class: "item-nav") do %>
+		<span class="ico-settings"></span>
+		<div class="name">
+			Settings
+		</div>
+	<% end %>
+	<%= render("layouts/side_bar_itens") %>
+	<%= link_to(new_campaings_path(), remote: true, class: "item-nav") do %>
+		<span class="ico-plus-circle"></span>
+		<div class="name">
+			New Campaing
+		</div>
+	<% end %>
+</div>
+
+<div class="logged logged-close" style="display: none;">
+   <div class="image ">
+       <img src="images/lovecraft.jpg" alt="" class="wrap-image">
+   </div>
+   <span class="btn-connect"> <a href="#" >Connect</a> </span>
+</div>

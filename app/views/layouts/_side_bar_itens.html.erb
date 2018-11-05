@@ -1,0 +1,21 @@
+<% @campaings.each do |campaing| %>
+	<div>
+		<%= link_to(campaings_path(id: campaing.id), remote: true, class: "item-nav drop-down", id: "#{campaing.id}") do %>
+			<span class="ico-book"></span>
+			<div class="name">
+				<%= campaing.name %>
+			</div>
+			<i class="ico-down ico-down-style"></i>
+		<% end %>
+		<ul class="drop-down-content">
+	    	<div class="item-nav inline">
+	        	<span class="ico-chat"></span>
+	    	    <a href="#" class="">Chat</a>
+	    	</div>
+			<div class="item-nav inline">
+				<span class="ico-camp"></span>
+				<a href="#" class="">Campaigns</a>
+	       </div>
+	   </ul>
+	</div>
+<% end %>

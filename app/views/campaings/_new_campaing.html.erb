@@ -1,0 +1,36 @@
+<div class="campaing">
+	<h3>Campaing</h3>
+   <%= form_for(@campaing, remote: true) do |f| %>
+		<div class="form-row w-100">
+			<div class="ml3 form-col">
+				<%= f.label(:name, class: 'label') %>
+				<%= f.text_field(:name, class: "input", autofocus: true, placeholder: "Campaing name") %>
+			</div>
+			<% @campaing.errors[:name].each do |error| %>
+				<div class="error">
+					<%= error %>
+				</div>
+			<% end %>		
+		</div>
+		<div class="form-row w-100" id="system">
+			<div class="ml3 form-col col-8">
+				<%= f.label(:system, class: "label") %>
+				<div class="select">
+					<%= f.select(:system, @systems.map{|sys| [sys.name, sys.id]}) %>
+				</div>
+			</div>
+			<div class=" form-col col-1">
+				<%= link_to("New System", new_systems_path(), class: "m-auto btn-sm", remote: true) %>
+			</div>
+			<% @campaing.errors[:system].each do |error| %>
+				<div class="error">
+					<%= error %>
+				</div>
+			<% end %>		
+		</div>
+		<%= f.submit(:submit, class: "btn") %>
+   <% end %>
+</div>
+<script>
+	const select = new Select();
+</script>

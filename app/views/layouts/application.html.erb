@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Creation</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+	<head>
+		<title>Creation</title>
+		<%= csrf_meta_tags %>
+		<%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+	</head>
 
-  <body>
-    <%= yield %>
-  </body>
+	<body>
+		<% if user_signed_in? %>
+			<div id="mySidenav" class="sidenav">
+		      <%= render("layouts/sidebar") %>
+			</div>
+			<div class="for-hover-side" id="side-bar-open">
+				<button type="button" name="button" class="button-open-sidebar hide-button">
+					<span id="side-button" class="ico-right hide"></span>
+				</button>
+			</div>
+			<div id="main" class="main">
+				<%= yield %>
+			</div>
+		<% else %>
+			<%= yield %>
+		<% end %>
+	</body>
 </html>

@@ -16,6 +16,19 @@
     border-radius: 5rem;
 }
 
+.float-right {
+    float: right;
+}
+
+.central {
+    position: relative;
+    left: 50%;
+}
+
+.m-auto {
+    margin: auto;
+}
+
 .ml1 {
     margin-left: 3px;
 }
@@ -30,6 +43,14 @@
 
 .ml4 {
     margin-left: 13px;
+}
+
+.ml5 {
+    margin-left: 17px;
+}
+
+.ml6 {
+    margin-left: 21px;
 }
 
 .mt1 {

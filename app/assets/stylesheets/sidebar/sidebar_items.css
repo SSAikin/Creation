@@ -1,5 +1,6 @@
 /* Sidebar itens */
 .item-nav {
+    display: block;
     padding: 5px 5px 5px 5px;
     text-decoration: none;
     font-size: 25px;
@@ -10,24 +11,28 @@
     max-height: 45px;
 }
 
-.item-nav > a {
-    overflow: hidden;
-    font-size: 25px;
-    text-decoration: none;
-    color: var(--letter-color);
-    position: relative;
-    bottom: -10px;
-    margin-left: 20px;
+.item-nav > .name {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 6px;
 }
+
+.item-nav > .ico-down {
+    display: inline-block;
+    margin-top: 10px;
+    position: relative;
+    float: right;
+}
+
 
 .item-nav.selected > .ico-chat, .item-nav.selected > .ico-sheet, .item-nav.selected > .ico-settings, .item-nav.selected > .ico-book, .item-nav.selected > .ico-camp {
     background-color: var(--base);
 }
 
-div.item-nav.selected {
+.item-nav.selected {
     background-color: var(--grey-1);
 }
 
-div.item-nav:hover, div.item-nav:hover span, div.item-nav:hover a, a.item-nav:hover {
+.item-nav:hover, .item-nav:hover span, .item-nav:hover a, a.item-nav:hover {
     color: var(--white);
 }

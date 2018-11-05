@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-	get "access", to: "users#access", as: :access
-	post "login", to: "users#login", as: :login
-	root to: "users#access"
+	root to: "campaings#initial"
+	resource :campaings
+	resource :systems
 	devise_for :users, controllers: { registrations: 'registrations'}
 end

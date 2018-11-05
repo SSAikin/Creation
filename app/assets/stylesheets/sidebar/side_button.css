@@ -7,7 +7,7 @@
     height: 100vh;
     float: left;
     transition: margin-left .5s;
-    margin-left: 55px;
+    margin-left: 60px;
     z-index: 999999;
 }
 
